@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<!--
+  HTML for purchase agreement form.
+-->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css">
+    <script src="index.js"></script>
+    <title>Purchase Agreement Form</title>
+  </head>
+  <body>
+    <header>
+      <h1>Return Form-House</h1>
+    </header>
+    <section id="form">
+      <div id="title">
+        <p>Purchase Agreement</p>
+        <p>Hidden Hills house</p>
+      </div>
+      <div id="basic-info">
+        <label>Property Address: <input type="text" id="property-address"></label>
+        <p>Check one:</p>
+        <section class="radio-buttons">
+          <label>
+            <input value="1" type="radio" name="payment"> All cash, price $<input type="number" id="price">
+          </label>
+          <label>
+            <input value="2" type="radio" name="payment"> Terms, price $<input type="number" id="price">,
+            Downpayment $<input type="number" id="downpayment">
+          </label>
+          <label>
+            <input value="3" type="radio" name="payment"> Balance $<input type="number" id="balance">
+            to be paid with <input type="number" id="interest"> % interest per year.
+          </label>
+          <label>
+            <input value="4" type="radio" name="payment"> Payments to be $<input type="number" id="monthly">
+            per month until paid in full.
+          </label>
+          <label>
+            <input value="5" type="radio" name="payment"> Escrow period to be <input type="number" id="days">
+            days.
+          </label>
+          <label>
+            <input value="6" type="radio" name="payment"> Other terms:
+            <textarea name="other" rows=3></textarea>
+          </label>
+        </section>
+        <label>Is there any existing financing?
+          <textarea name="existing-financing" rows=3 required></textarea>
+      </div>
+      <div id="buyer-info">
+        <div id="buyer">
+          <label>Buyer: <input type="text" id="buyer-name"></label>
+        </div>
+        <div id="seller">
+          <label>Seller: <input type="text" id="seller-name"></label>
+          <label>Address: <input type="text" id="address"></label>
+          <label>Phone: <input type="text" id="phone"></label>
+          <label>Other phone: <input type="text" id="other-phone"></label>
+        </div>
+      </div>
+    </section>
+    <div id="submit">
+      <button>Submit</button>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,76 @@
+/*
+  CSS styles for purchase agreement form.
+*/
+h1, #title {
+  text-align: center;
+}
+
+#title p {
+  margin: 0px;
+}
+
+.radio-buttons > label {
+  display: block;
+}
+
+button {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#submit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#title {
+  margin-bottom: 30px;
+}
+
+#form {
+  margin-left: 20%;
+  margin-right: 20%;
+  border-width: 2px;
+  border-color: black;
+  border-style: solid;
+  padding: 20px
+}
+
+#property-address {
+  width: 40%;
+}
+
+#address {
+  width: 70%;
+}
+
+textarea {
+  width: 98%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#buyer-info {
+  display: flex;
+}
+
+#buyer-name, #seller-name {
+  width: 70%;
+}
+
+#address {
+  width: 80%;
+}
+
+#buyer, #seller {
+  width: 100%;
+}
+
+label {
+  display: block;
+}
+
+label, #basic-info > p {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
